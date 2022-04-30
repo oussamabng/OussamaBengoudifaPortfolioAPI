@@ -4,6 +4,9 @@ import json
 
 
 url = "http://127.0.0.1:8000/api"
+email = "oussama.bengoudifa.perso@gmail.com"
+name = "Bengoudifa Oussama"
+phone = "213 541523275"
 
 def get_exp_nb(dob_str):
     now_str = dt.strftime(dt.utcnow(), '%Y-%m-%d')
@@ -51,6 +54,9 @@ for project in projects_temp:
     )
 
 api = {
+    'phone':phone,
+    'name': name,
+    'email' : email,
     'portfolio':portfolio,
     'job_titles':job_titles,
     'nb_projects':nb_projects,
